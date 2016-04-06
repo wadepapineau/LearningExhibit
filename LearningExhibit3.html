@@ -1,0 +1,83 @@
+<link href='https://fonts.googleapis.com/css?family=Tinos:400,700|Open+Sans+Condensed:700,300|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+#header {
+	background: url(burried.png);
+	color:white;
+	text-align:center;
+	padding:5px;
+}
+#nav {
+	background-color:grey;
+	line-height: 30px;
+	background-color:#eeeeee;
+	height: 1320px;
+	width: 200px;
+	float:left;
+	padding: 5px;
+}
+#section {
+	background-color:white;
+	float:left;
+	padding: 10px;
+	font-family: 'Open+Sans+Condensed', serif;
+}
+#footer {
+	background-color:black;
+	color:white;
+	clear: both;
+	text-align:center;
+	padding: 5px;
+}
+h1 {
+	font-family: 'Tinos', sans-serif;
+}
+a:link {color:black; background-color:transparent; text-decoration:underline}
+a:visited {color:black; background-color:transparent; text-decoration:underline}
+a:hover {color:red; background-color:transparent; text-decoration:underline}
+a:active {color:red; background-color:transparent; text-decoration:underline}
+</style>
+
+<body>
+
+<div id="header">
+<h1>Module 3</h1>
+</div>
+
+<div id="nav">
+<a href="http://wadepapineau.github.io/LearningExhibit/LearningExhibit.html">Introduction</a><br>
+<a href="http://wadepapineau.github.io/LearningExhibit/LearningExhibit2.html">Module 2</a><br>
+Module 4<br>
+Tokyo
+</div>
+
+<div id="section">
+<h1>Working with Regex: A Powerful Tool with Quite a Learning Curve</h1>
+<p>This exercise was important for learning how to organize a messy dataset like the one that I collected. Before starting the exercises I experimented with it a bit using the Colonial Newspapers datset, doing simple searches<br> 
+for terms like "canada" and "Quebec," and could see right away hpw this is a very powerful tool. My notes and initial thoughts on this can be found <a href="https://github.com/wadepapineau/my-research-notebook/blob/master/Exercise%202%253A%20Regular%20Expressions%20Introduction.txt" target="_blan">here</a>.</p><br>
+<h2>Regex and the Republic of Texas Dataset</h2>
+<p>This was a very challenging exercise for someone like myself who had never even heard of Regex before. My initial notes on this exercise can be found <a href="https://github.com/wadepapineau/my-research-notebook/blob/master/Exercise%202%253A%20REGEX%20and%20the%20Republic%20of%20Texas.txt" target="_blank">here</a>. The difficulties I had with this exercise atarted rather early on<br> 
+but in the end I took my time, powered through, and learned a lot in the process.</p>
+<p>My troubles started at the end of step one. RegExr became rather frustrating for me as many of the commands did not match the ones I was using in Notepad++. While I understood how this program could be useful for<br> 
+testing your strings before executing them within your document and potentially mucking it all up, overall, since the more complex commands did not match the ones I was using, I quickly gave up on RegExr.<br> 
+Furthermore, when using Notpead++ you can test your string one line at a time before committing to applying it to the entire document. Also, Notepad++ also features a handy little "undo" button in the top<br> 
+menu bar.</p>
+<center><img src="Regex1.png";></center><br><br><br>
+<p>The next problem I had, and the one that I could not find a solution to without getting creative on my own and finally ignoring the instructions provided, was removing the blank lines in step 3. The<br> 
+code given in the instructions simply did not work no matter how many variations of it I tried (\n\r, ^\r, and any variations of this). The tutorial video did not help either. What was beig demonstrated there simply did not<br> 
+work for me. Googling it did not help either, as Google results suggested using the same code as was suggested in the textbook exercise. Finally I figured out on my own how to accomplish this without using any code at<br> 
+all, which may have something to do with the reason I could not get it to work using code in the first place. </p>
+<center><img src="Regex2.png";></center><br><br><br>
+<p>The next big snag I hit was in step 4. And that was not just part of step 4, but all of it. In the end, I had to watch the tutorial video to finally get it all right. but this was after being rather<br> 
+stubborn and wasting a lot of time with trial and error.</p><br>
+<h2>Conclusion</h2>
+<p>This was a <i>very</i> challenging exercise for me. But, I knew that this was going to be very useful for me in my final project, and so, stuck with it in spite of much frustration. In the end, it all worked out,<br> 
+and the completed correspondence file can be found <a href="https://github.com/wadepapineau/my-research-notebook/blob/master/cleaned-correspondence.csv" target="_blank">here</a>. As mentioned above, with was extremely important for my final project, as I used these techniques to create .csv files from my own dataset, from which I<br> 
+was ablt to use to create the visualizations present in my project. This also served to make me aware of the sheer amount of work involved behind the scenes to generate the kind of visualizations that use this kind of data,<br> 
+something that was quite surpising to me.</p><br> 
+
+<div id="footer">
+By Wade Papineau for HIST3907o: Crafting Digital History 2016
+</div>
+
+</body>
