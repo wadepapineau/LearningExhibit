@@ -1,0 +1,87 @@
+<link href='https://fonts.googleapis.com/css?family=Tinos:400,700|Open+Sans+Condensed:700,300|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+#header {
+	background: url(burried.png);
+	color:white;
+	text-align:center;
+	padding:5px;
+}
+#nav {
+	background-color:grey;
+	line-height: 30px;
+	background-color:#eeeeee;
+	height: 1400px;
+	width: 200px;
+	float:left;
+	padding: 5px;
+}
+#section {
+	background-color:white;
+	float:left;
+	padding: 10px;
+	font-family: 'Open+Sans+Condensed', serif;
+}
+#footer {
+	background-color:black;
+	color:white;
+	clear:both;
+	text-align:center;
+	padding: 5px;
+}
+h1 {
+	font-family: 'Tinos', sans-serif;
+}
+a:link {color:black; background-color:transparent; text-decoration:underline}
+a:visited {color:black; background-color:transparent; text-decoration:underline}
+a:hover {color:red; background-color:transparent; text-decoration:underline}
+a:active {color:red; background-color:transparent; text-decoration:underline}
+</style>
+
+<body>
+
+<div id="header">
+<h1>Module 2</h1>
+</div>
+
+<div id="nav">
+<a href="http://wadepapineau.github.io/LearningExhibit/LearningExhibit.html">Introduction</a><br>
+Module 3<br>
+Tokyo
+</div>
+
+<div id="section">
+<h1>Revisiting Module 2</h1>
+<p>I completed the Module 2 exercises rather late in the semester. This is because, due to the advice given to me by Professor Graham, I had originally skipped these exercises thinking I would use one of the datasets<br> 
+provided. The birth of my son on February the 6th put serious strain on the time that I was able to commit to my coursework. The advice of Professor Graham was to skim through the textbook and do only those exercises<br> 
+that I felt would be relevant to my selected dataset and the nature of my final project. The exercises in this module seemed to deal mostly with creating datasets and, as I originally intended to use one of the sets<br> 
+provided, I left Chapter 2 behind.</p>
+<p>It was not until I reached Module 5 that I decided to double-back. I still had no idea what I was going to do for my final project, and thought the best thing to do would to be to create a dataset of my own that<br> 
+reflected my own research interests.</p><br>
+<h1>The Devil is in the Details:<br> 
+Overcoming Problems with the Particulars in the html code of the Provided API</h1>
+<p>My original notes on this exercise can be found in my open research notebook <a href="https://github.com/wadepapineau/my-research-notebook/blob/master/Exercise%203%253A%20APIs.txt" target="_blank">here</a>.</p><br>
+<h2>Using Git Bash and Wget to Download Data</h2>
+<p>At this point I was excited about this exercise. I understood how useful being able to collect large amounts of data in this way could be for other projects I have worked on and for future projects. But, I did run into some<br> 
+trouble with this right away.</p>
+<center><img src="API1.png";></center>
+<p>It took a bit of back-and-forth to figure this out, but eventually I realized that my problem was with these jq commands in the .sh file. By changing these to /jq everything to seemed work just fine. Doing this provided the<br> 
+"clean" and "dirty" files containing the ochin #s that I was not getting before.</p>
+<p>It was immediately after this that I hit my next snag. I thought all was well until I reached the next part of the exercise dealing with the splitting of the output.txt file. The problem: I had no ouput file! So it was back<br> 
+to playing with the code in the .sh file.</p>
+<center><img src="API2.png";></center>
+<p>After reading each line very carefully I spotted the problem in line 38. I have a 64-bit machine, and had downloaded Wget64. By changing "wget" to "wget64," the problem was solved and I was now getting an output.txt<br>
+ file.</p><br>
+<h2>Conclusion: A Very Important Exercise</h2>
+<p>First of all, this proved to be a very important exercise for me. I learned a little something about APIs, html, and the programs used for downloading data from a website. I also figured out that I did not have to run the .sh<br> 
+file through Gitbash. All I actually had to do was double-click the .sh file and it ran automatically.</p>
+<p>Also, this exercise was essential for my final project. I modified this file to collect datasets of my own from the Canadiana Discovery Portal. My modified .sh file can be found <a href="https://github.com/wadepapineau/FinalProject/blob/gh-pages/canadiana-2.sh" target="_blank">here</a>. I also used a modification of this file to<br> 
+download the publication infromation contained in my documents of interest after getting frustrated with trying to extract this data using a Regex string in Notepad++. The one I modified for cholera is <a href="https://github.com/wadepapineau/FinalProject/blob/gh-pages/Cholera-Date.sh" target="_blank">here</a>, for example,<br> 
+and the one I made for smallpox is identical (changing, of course, "cholera" to "smallpox)."</p>
+</div>
+
+<div id="footer">
+By Wade Papineau for HIST3907o: Crafting Digital History 2016
+</div>
+
+</body>
